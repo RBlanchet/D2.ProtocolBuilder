@@ -25,7 +25,7 @@
   "dependencies": {
     "commander": "^2.8.1",
     "diff": "^1.4.0",
-    "fs-extra": "^0.18.4",
+    "fs-extra": "^9.0.1",
     "glob": "^5.0.10",
     "js-beautify": "^1.5.6",
     "syntax-error": "^1.1.4",

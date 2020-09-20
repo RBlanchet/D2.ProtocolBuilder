@@ -1,41 +1,38 @@
-var d2com = require('d2com');
-var CustomDataWrapper = d2com.CustomDataWrapper;
-var BooleanByteWrapper = d2com.BooleanByteWrapper;
-<typeDeps>
+var <classname> = (function (_super) {
+  __extends(AdminCommandMessage, _super);
+  function <classname>(){
+    <vars>
+    _super.call(this);
+  }
+  <classname>.prototype.getMessageId = function () {
+    return <classname>.ID;
+  };
+  <classname>.prototype.reset = function() {
+    <vars>
+  };
+  <classname>.prototype.unpack = function(param1, param2) {
+    this.deserialize(param1);
+  }
+  <classname>.prototype.pack = function() {
+    var loc2 = new ByteArray();
+    this.serialize(new CustomDataWrapper(loc2));
+    NetworkMessage.writePacket(param1, this.getMessageId(), loc2);
+  };
+  <classname>.prototype.serialize = function (output) {
+    this.serializeAs_<classname>(output);
+  };
+  <classname>.prototype.deserialize = function (input) {
+    this.deserializeAs_<classname>(input);
+  };
 
-var <classname> = function () {
-  <vars>
-};
+  <classname>.prototype.serializeAs_<classname> = function (output) {
+    <serialize>
+  };
 
-<superDep>
-  
-module.exports = function () {
-  return new <classname>();
-};
+  <classname>.prototype.deserializeAs_<classname> = function (input) {
+    <deserialize>
+  };
+  <classname>.ID = <id>;
+  return <classname>;
+})(NetworkMessage);
 
-<classname>.prototype.serialize = function (output) {
-  this.serializeAs_<classname>(output);
-};
-
-<classname>.prototype.deserialize = function (input) {
-  this.deserializeAs_<classname>(input);
-};
-
-<classname>.prototype.serializeAs_<classname> = function (param1) {
-  <serialize>
-};
-
-<classname>.prototype.deserializeAs_<classname> = function (param1) {
-  <deserialize>
-};
-
-<classname>.prototype.getMessageId = function () {
-  return <id>;
-};
-
-<classname>.prototype.getClassName = function () {
-  return '<classname>';
-};
-
-module.exports.id = <id>;
-module.exports.<classname> = <classname>;
