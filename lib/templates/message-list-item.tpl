@@ -1,1 +1,0 @@
-<id>: function () { return new <classname>(); }

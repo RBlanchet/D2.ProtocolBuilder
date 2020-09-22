@@ -54,4 +54,6 @@ var MessageReceiver = (function () {
     return (messageLength);
   };
   MessageReceiver._list = {<list>}
-});
+  return MessageReceiver;
+})();
+<object>.MessageReceiver = MessageReceiver;

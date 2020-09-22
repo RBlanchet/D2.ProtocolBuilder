@@ -1,6 +1,16 @@
-const buildify = require('buildify');
+var pjson = require('./package.json'),
+    d2builder = require('./lib/d2builder.js'),
+    program = require('commander');
 
-buildify()
-  .concat(['src/protocol/enum-manager.js','src/protocol/message-receiver.js'])
-  .wrap('template.js', { version: '1.0' })
-  .save('build/protocol.js')
+program
+    .version(pjson.version)
+    .usage('-s <path> -o <path>')
+    .option('-s, --src <path>', 'directory path')
+    .option('-o, --output <file>', 'output file')
+    .parse(process.argv);
+
+if (!program.output || !program.src) {
+    program.outputHelp();
+}
+
+d2builder.merge(program.src, program.output);
