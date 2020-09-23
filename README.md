@@ -6,7 +6,7 @@ protocol dofus 2.0 builder using js to output
 ## Extract Files ##
 First you need to extract some AS files (around 1500) from the dofus Invoker on your computer
 
-Extract file from dofus invoker :
+Extract files from dofus invoker :
 ```sh
 npm run-script extract || node index.js -c "extract"
 ```
@@ -17,7 +17,7 @@ And outuput the content in `./tmp/protocol/as/`
 See [constants.js](./lib/constants.js) for more details
 
 ## Build JS Files ##
-For the second step with need to parse and convert the AS files into javascript files
+For the second step we need to parse and convert the AS files into javascript files
 
 Convert AS files to JS files :
 ```sh
