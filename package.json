@@ -1,14 +1,17 @@
 {
   "name": "d2builder",
-  "version": "1.0.1",
-  "description": "Build dofus network protocol in javascript from source.",
+  "version": "2.0.0",
+  "description": "Build & Compile dofus network protocol in javascript with files extractions.",
   "main": "index.js",
   "scripts": {
+    "extract" : "node index.js -c extract",
+    "build" : "node index.js -c build",
+    "compile" : "node index.js -c compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snapizz/d2builder.git"
+    "url": "git+https://github.com/Vicfou-dev/d2builder.git"
   },
   "keywords": [
     "dofus",
@@ -16,12 +19,12 @@
     "protocol",
     "builder"
   ],
-  "author": "Snapiz",
+  "author": "Snapiz (v1) & Vicfou (v2)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Snapizz/d2builder/issues"
+    "url": "https://github.com/Vicfou-dev/d2builder/issues"
   },
-  "homepage": "https://github.com/Snapizz/d2builder#readme",
+  "homepage": "https://github.com/Vicfou-dev/d2builder#readme",
   "dependencies": {
     "commander": "^2.8.1",
     "diff": "^1.4.0",

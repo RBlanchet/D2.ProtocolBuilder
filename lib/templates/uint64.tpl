@@ -50,10 +50,10 @@ var UInt64 = (function (_super) {
     }
     UInt64.fromNumber = function (n) {
         return new UInt64(n, Math.floor((n / 4294967296)));
-    };;
+    };
     UInt64.prototype.toNumber = function () {
         return (((this.high * 4294967296) + this.low));
-    };;
+    };
     UInt64.prototype.toString = function (radix) {
         radix = radix || 10;
         var _local_4 = 0;
@@ -74,7 +74,7 @@ var UInt64 = (function (_super) {
             };
         } while (copyOfThis.high !== 0);
         return ((copyOfThis.low.toString(radix) + String.fromCharCode.apply(String, digitChars.reverse())));
-    };;
+    };
     return UInt64;
 })(Binary64);
 <object>.UInt64 = UInt64;

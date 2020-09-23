@@ -18,22 +18,22 @@ var Binary64 = (function () {
         this.high = (this.high + Number((newLow / 4294967296)));
         this.low = newLow;
         return mod;
-    };;
+    };
     Binary64.prototype.mul = function (n) {
         var newLow = (Number(this.low) * n);
         this.high = (this.high * n);
         this.high = (this.high + Number((newLow / 4294967296)));
         this.low = (this.low * n);
-    };;
+    };
     Binary64.prototype.add = function (n) {
         var newLow = (Number(this.low) + n);
         this.high = (this.high + Number((newLow / 4294967296)));
         this.low = newLow;
-    };;
+    };
     Binary64.prototype.bitwiseNot = function () {
         this.low = ~(this.low);
         this.high = ~(this.high);
-    };;
+    };
     Binary64.CHAR_CODE_0 = '0'.charCodeAt(0);
     Binary64.CHAR_CODE_9 = '9'.charCodeAt(0);
     Binary64.CHAR_CODE_A = 'a'.charCodeAt(0);
