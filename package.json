@@ -1,6 +1,6 @@
 {
   "name": "d2builder",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Build & Compile dofus network protocol in javascript with files extractions.",
   "main": "index.js",
   "scripts": {
