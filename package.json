@@ -17,7 +17,12 @@
     "dofus",
     "packets",
     "protocol",
-    "builder"
+    "builder",
+    "dofus",
+    "dofus2",
+    "lib",
+    "d2",
+    "dofus2protocol"
   ],
   "author": "Snapiz (v1) & Vicfou (v2)",
   "license": "MIT",
