@@ -1,4 +1,4 @@
-d2builder
+Dofus Protocol Builder
 ============
 
 protocol dofus 2.0 builder using js to output
