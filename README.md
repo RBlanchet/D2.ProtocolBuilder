@@ -3,6 +3,9 @@ Dofus Protocol Builder
 
 protocol dofus 2.0 builder using js to output
 
+- Parse dofus invoker into all the required files to make dofus protocol (warning jerakine files ignored)
+- Convert and compile AS files into a module for node.js (work with [bytearray-node](https://www.npmjs.com/package/bytearray-node) )
+
 ## Extract Files ##
 First you need to extract some AS files (around 1500) from the dofus Invoker on your computer
 
