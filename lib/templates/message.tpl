@@ -28,6 +28,7 @@ var <classname> = (function (<super>) {
     <serialize>
   };
   <classname>.prototype.deserializeAs_<classname> = function (input) {
+    <vars>
     <deserialize>
   };
   <classname>.ID = <id>;
